@@ -9,8 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./background2.png');
-    /*https://pt.pngtree.com/free-sports-banner*/
+    background-image: url('https://samuel-sbf.github.io/estilo/img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,9 +33,7 @@ body {
     color: #FFF;
     padding: 15px;
     font-size: larger;
-    background-color: #222
-        /*rgba(0, 0, 0, 0.8)*/
-    ;
+    background-color: #222;
     box-shadow: 5px 10px #000;
 }
 
@@ -59,10 +56,13 @@ body {
     background-color: rgba(150, 150, 150, 0.8);
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
+    justify-content: center;
     gap: 10px;
     padding: 15px;
     padding-bottom: 0;
     width: fit-content;
+    max-height: 100vh;
 }
 
 .btnMenu {
@@ -90,8 +90,6 @@ body {
     transform: rotate(-45deg);
 }
 
-
-
 .up {
     bottom: 0px;
     transition: all 1000ms ease;
@@ -102,8 +100,8 @@ body {
     bottom: 25vh;
 }
 
-
 .menuBottom div {
+    background-color: #FFF;
     cursor: pointer;
     padding: 5px;
     display: flex;
@@ -111,8 +109,10 @@ body {
     text-align: center;
     width: 1fr;
     border: #000 solid 1px;
+    border-radius: 15px;
 }
 
 .menuBottom div img {
+    aspect-ratio: 1/1;
     height: 100px;
 }
