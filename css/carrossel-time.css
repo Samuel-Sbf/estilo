@@ -1,0 +1,201 @@
+@import url(https://samuel-sbf.github.io/estilo/css/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Supermolot Neue Medium';
+}
+
+body {
+    height: 100vh;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+:root {
+    /*dimenções de cada card*/
+    --cor-card-bottom: #FFF;
+    --cor-card-top: #5AB9B4;
+
+    /*Cores da imagem do card*/
+    --borda-img-interna: 4px solid var(--cor-card-top);
+    --borda-img-externa: #ccc;
+    --size-image: 40vh;
+
+    /*nome*/
+    --name-font-size: 20px;
+    --name-font-weight: 700;
+    --name-cor: #000;
+
+    /*descrição do cargo*/
+    --description-font-size: 14px;
+    --description-cor: #333;
+    --border-radius: 25px;
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+}
+
+.slide-content {
+    overflow: hidden;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: var(--cor-card-bottom);
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-card-top);
+    border-radius: 23px 23px 0 23px;
+    /*Borda da parte de cima*/
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: var(--cor-card-top);
+}
+
+.overlay::after {
+    width: 42px;
+    border-radius: 0 25px 0 0;
+    background-color: var(--cor-card-bottom);
+}
+
+.card-image {
+    position: relative;
+    height: var(--size-image);
+    width: var(--size-image);
+    border-radius: var(--border-radius);
+    background-color: var(--borda-img-externa);
+    padding: 3px;
+    transition: all 400ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    border: var(--borda-img-interna);
+}
+
+.name {
+    font-size: var(--name-font-size);
+    font-weight: var(--name-font-weight);
+    color: var(--name-cor);
+}
+
+.description {
+    font-size: var(--description-font-size);
+    color: var(--description-cor);
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #265DF2;
+}
+
+.swiper-navBtn {
+    color: #6E93f7;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+    color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 35px;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    background-color: #6E93f7;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact button {
+    width: 120px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.centraliza {
+    justify-content: center;
+}
