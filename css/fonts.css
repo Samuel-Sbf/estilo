@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'TT Supermolot Neue Black';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-Black.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue Bold';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue ExpBlackIt';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-ExpBlackIt.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue ExpBold';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-ExpBold.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue ExtraBoldItalic';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue Extra Italic';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue Light';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-Light.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue LightItalic';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue Medium';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue MediumItalic';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'TT Supermolot Neue Regular';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://Samuel-Sbf.github.io/estilo/fonts/TTSupermolotNeue-Regular.ttf);
+}
