@@ -15,7 +15,7 @@ body {
 :root {
     /*dimenções de cada card*/
     --cor-card-bottom: #FFF;
-    --cor-card-top: #5AB9B4;
+    --cor-card-top: #333333;
 
     /*Cores da imagem do card*/
     --borda-img-interna: 4px solid var(--cor-card-top);
