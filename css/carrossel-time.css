@@ -1,6 +1,8 @@
 @import url(https://samuel-sbf.github.io/estilo/css/fonts.css);
 
-
+:root{
+    --borda-card: #CCC;
+}
 
 * {
     margin: 0;
@@ -29,7 +31,7 @@ body {
     aspect-ratio: 3/4;
     max-height: 100vh;
     flex-direction: column;
-    border: 2px solid black;
+    border: 2px solid var(--borda-card);
     padding: 0 30px;
     position: relative;
 }
@@ -38,7 +40,7 @@ body {
     content: "";
     height: 40px;
     aspect-ratio: 1/1;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--borda-card);
     position: absolute;
     right: -21px;
     top: -22px;
@@ -87,7 +89,7 @@ button img{
     aspect-ratio: 1/1;
     height: 190px;
     border-radius: 20%;
-    background-image: url(circulo.png);
+    background-image: url(../Icons/circulo.png);
     background-size: cover;
     background-position: center;
     position: relative;
