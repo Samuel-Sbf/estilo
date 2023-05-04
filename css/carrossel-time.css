@@ -76,15 +76,6 @@ button img{
     aspect-ratio: 1/1;
 }
 
-.card {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    max-width: 400px;
-    max-height: 1200px;
-    position: relative;
-    gap: 15px;
-}
-
 .card-img {
     aspect-ratio: 1/1;
     height: 190px;

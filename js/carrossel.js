@@ -23,11 +23,11 @@ window.onload = function () {
             <div class="card-contatos">
                 <button
                     onclick="window.open('https:\/\/mail.google.com/mail/u/0/?tf=cm&fs=1&to=${x.email}&hl=pt-BR')">
-                    <img src="gmail.png" alt="">
+                    <img src="https://Samuel-Sbf.github.io/estilo/Icons/gmail.png" alt="">
                 </button>
                 <button
                     onclick="window.open('https:\/\/app.slack.com/client/T04RF492V/${x.slack}')" )>
-                    <img src="slack.png" alt="">
+                    <img src="https://Samuel-Sbf.github.io/estilo/Icons/slack.png" alt="">
 
                 </button>
             </div>
@@ -100,7 +100,7 @@ if (slideCard >= 1) {
     };
 }
 if (slideCard >= 2) {
-    obj.breakpoints[520] = {
+    obj.breakpoints[400] = {
         slidesPerView: 2,
         slidesPerGroup: 2,
     };
@@ -113,3 +113,4 @@ if (slideCard >= 3) {
 }
 
 let swiper = new Swiper(".slide-content", obj);
+console.log(obj);
