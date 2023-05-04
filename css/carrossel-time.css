@@ -1,5 +1,7 @@
 @import url(https://samuel-sbf.github.io/estilo/css/fonts.css);
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,163 +9,98 @@
     font-family: 'TT Supermolot Neue Medium';
 }
 
+.centraliza,
+.card,
+.card-img,
 body {
     display: flex;
     align-items: center;
-}
-
-:root {
-    /*dimenções de cada card*/
-    --cor-card-bottom: #FFF;
-    --cor-card-top: #333333;
-
-    /*Cores da imagem do card*/
-    --borda-img-interna: 4px solid var(--cor-card-top);
-    --borda-img-externa: #ccc;
-    --size-image: 40vh;
-
-    /*nome*/
-    --name-font-size: 20px;
-    --name-font-weight: 700;
-    --name-cor: #000;
-
-    /*descrição do cargo*/
-    --description-font-size: 14px;
-    --description-cor: #333;
-    --border-radius: 25px;
+    justify-content: center;
 }
 
 .slide-container {
     max-width: 1120px;
     width: 100%;
-}
-
-.slide-content {
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
-    border: 2px solid black;
-    border-radius: 25px;
-    background-color: var(--cor-card-bottom);
-}
-
-.image-content,
-.card-content {
-    display: flex;
+    aspect-ratio: 3/4;
+    max-height: 100vh;
     flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content {
+    border: 2px solid black;
+    padding: 0 30px;
     position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
 }
 
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--cor-card-top);
-    border-radius: 23px 23px 0 23px;
-    /*Borda da parte de cima*/
-}
-
-.overlay::before,
-.overlay::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
+.card::after {
+    content: "";
     height: 40px;
-    width: 40px;
-    background-color: var(--cor-card-top);
+    aspect-ratio: 1/1;
+    border-bottom: 2px solid black;
+    position: absolute;
+    right: -21px;
+    top: -22px;
+    background-color: white;
+    transform: rotate(45deg);
 }
 
-.overlay::after {
-    width: 42px;
-    border-radius: 0 25px 0 0;
-    background-color: var(--cor-card-bottom);
-}
-
-.card-image {
-    position: relative;
-    height: var(--size-image);
-    width: var(--size-image);
-    border-radius: var(--border-radius);
-    background-color: var(--borda-img-externa);
-    padding: 3px;
-    transition: all 400ms ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-image .card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-    border: var(--borda-img-interna);
-}
-
-.name {
-    font-size: var(--name-font-size);
-    font-weight: var(--name-font-weight);
-    color: var(--name-cor);
-}
-
-.description {
-    font-size: var(--description-font-size);
-    color: var(--description-cor);
+.card-nome {
+    max-width: 220px;
     text-align: center;
 }
 
-.button {
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #4070F4;
-    border-radius: 6px;
-    margin: 14px;
+.card-contatos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
     cursor: pointer;
-    transition: all 0.3s ease;
+
+    position: relative;
+    background-color: black;
 }
 
-.swiper-navBtn {
-    color: #6E93f7;
-    transition: color 0.3s ease;
+button img{
+    filter: invert();
+    width: 70%;
+    aspect-ratio: 1/1;
 }
 
-.swiper-navBtn:hover {
-    color: #4070F4;
+.card {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 400px;
+    max-height: 1200px;
+    position: relative;
+    gap: 15px;
 }
 
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 35px;
+.card-img {
+    aspect-ratio: 1/1;
+    height: 190px;
+    border-radius: 20%;
+    background-image: url(circulo.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.swiper-button-next {
-    right: 0;
-}
-
-.swiper-button-prev {
-    left: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color: #6E93f7;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #4070F4;
+.foto {
+    position: absolute;
+    height: 160px;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -176,20 +113,6 @@ body {
     }
 }
 
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.contact button {
-    width: 120px;
-    height: 40px;
-    background-size: cover;
-    background-position: center;
-    border: 0;
-    cursor: pointer;
-}
-.swiper-slide{
-    height: fit-content;
+.slide-content {
+    overflow: hidden;
 }

@@ -6,37 +6,37 @@ window.onload = function () {
 
     const slide = document.querySelector('.card-wrapper');
 
-    for (let x = 0; x != listaPessoas.length; x++) {
-        cards += `
-    <div class="card swiper-slide">
-        <div class="image-content">
-            <span class="overlay"></span>
+    listaPessoas.forEach(x => {
 
-            <div class="card-image">
-                <img src="${urlDiretorio}img/${listaPessoas[x]['slack']}.jpg" class="card-img">
+        cards +=
+            `<div class="card swiper-slide">
+
+            <div class="card-img">
+                <img class="foto" src="https://Samuel-Sbf.github.io/estilo/img/${x.slack}.jpg" alt="">
             </div>
-        </div>
 
-        <div class="card-content">
-            <h2 class="name"> ${listaPessoas[x]['nome']} </h2>
+            <div class="card-nome">
+                <h1>${x.nome}</h1>
+                <h3>${x.cargo ? x.cargo : ''}</h3>
+            </div>
 
-            <p class="description">  </p>
-            
-            <div class="contact">
-                <button onclick="window.open('https:\/\/app.slack.com/client/T04RF492V/${listaPessoas[x]['slack']}')"
-                    style="background-image: url('${urlDiretorio}Icons/slack.png');"></button>
+            <div class="card-contatos">
                 <button
-                    onclick="window.open('https:\/\/mail.google.com/mail/u/0/?tf=cm&fs=1&to=${listaPessoas[x]['email']}&hl=pt-BR')"
-                    style="background-image: url('${urlDiretorio}Icons/gmail.jpg');"></button>
+                    onclick="window.open('https:\/\/mail.google.com/mail/u/0/?tf=cm&fs=1&to=${x.email}&hl=pt-BR')">
+                    <img src="gmail.png" alt="">
+                </button>
+                <button
+                    onclick="window.open('https:\/\/app.slack.com/client/T04RF492V/${x.slack}')" )>
+                    <img src="slack.png" alt="">
+
+                </button>
             </div>
-        </div>
-    </div>
-    `;
-    }
+        </div>`;
+    });
 
     slide.innerHTML = cards.toString();
 
-    setInterval(() => document.querySelector('.swiper-button-next').click(), 5000);
+    //setInterval(() => document.querySelector('.swiper-button-next').click(), 5000);
 }
 
 //Evento de clique quando o usuario clicar a seta do teclado ele pula um slide
