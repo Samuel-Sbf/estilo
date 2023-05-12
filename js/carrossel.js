@@ -22,11 +22,11 @@ window.onload = function () {
 
             <div class="card-contatos">
                 <button
-                    onclick="window.open('https:\/\/mail.google.com/mail/u/0/?tf=cm&fs=1&to=${x.email}&hl=pt-BR')">
+                    onclick="window.open('https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=${x.email}&hl=pt-BR')">
                     <img src="https://Samuel-Sbf.github.io/estilo/Icons/gmail.png" alt="">
                 </button>
                 <button
-                    onclick="window.open('https:\/\/app.slack.com/client/T04RF492V/${x.slack}')" )>
+                    onclick="window.open('https://app.slack.com/client/T04RF492V/${x.slack}')" )>
                     <img src="https://Samuel-Sbf.github.io/estilo/Icons/slack.png" alt="">
 
                 </button>
