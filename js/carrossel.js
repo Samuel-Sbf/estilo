@@ -75,7 +75,7 @@ let obj = {
     slidesPerView: slideCard,
     slidesPerGroup: slideCard,
     spaceBetween: 25,
-    loop: true,
+    loop: false,
     centerSlide: 'true',
     fade: 'true',
     grabCursor: 'true',
