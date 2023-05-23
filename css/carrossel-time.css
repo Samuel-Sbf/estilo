@@ -79,21 +79,20 @@ button img{
 .card-img {
     aspect-ratio: 1/1;
     height: 190px;
-    border-radius: 20%;
+    border-radius: 30%;
     background-image: url(../Icons/circulo.png);
     background-size: cover;
     background-position: center;
     position: relative;
-    overflow: hidden;
 }
 
 .foto {
     position: absolute;
-    height: 160px;
+    height: 82%;
     border-radius: 50%;
     z-index: -1;
     position: absolute;
-    bottom: 5px;
+    bottom: 5%;
 }
 
 @media screen and (max-width: 768px) {
